@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!ELEMENT ITER (dept,lab)>
+<!ELEMENT dept (ca)>
+<!ELEMENT ca (faculty+)>
+<!ELEMENT faculty (#PCDATA)>
+<!ELEMENT lab (iwt)>
+<!ELEMENT iwt (#PCDATA)>
+<!ATTLIST ca regno CDATA #IMPLIED>
+<!ATTLIST faculty serno CDATA #IMPLIED>
+<!ATTLIST iwt subjectcode CDATA #IMPLIED>

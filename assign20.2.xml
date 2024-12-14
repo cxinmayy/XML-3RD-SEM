@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE booklib SYSTEM "assign20.2.dtd">
+<booklib>
+	<book>
+		<author>
+			Kunal Das
+		</author>
+		<title bksrl="IN234">
+			IWT Book BCA
+		</title>
+	</book>
+	<book>
+		<author ac="OD1234" bank="SBI">
+			Jamini Roy
+		</author>
+		<title bksrl="US213">
+			OS Book BCA
+		</title>
+	</book>
+	<pubinfo>
+		<pcom>
+			SOA ITER
+		</pcom>
+		<vol>
+			IV
+		</vol>
+		<pdate>
+			13
+			<month>
+				Jan
+			</month>
+			2023
+		</pdate>
+	</pubinfo>
+</booklib>
