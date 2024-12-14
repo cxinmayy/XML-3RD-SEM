@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITER>
+
+    <dept>
+        <ca regno="AB123">
+            <faculty serno="1234">
+                D Roy
+            </faculty>
+            <faculty serno="1234">
+            A Pati
+            </faculty>
+        </ca>
+    </dept>
+    <lab>
+        <iwt subjectcode="CA2009">
+        57
+        </iwt>
+    </lab>
+</ITER>
