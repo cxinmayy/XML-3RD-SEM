@@ -1,47 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-
-    <xs:element name="booklib">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="book" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="author">
-                                <xs:complexType>
-                                    <xs:simpleContent>
-                                        <xs:extension base="xs:string">
-                                            <xs:attribute name="ac" type="xs:string" use="optional" />
-                                            <xs:attribute name="bank" type="xs:string"
-                                                use="optional" />
-                                        </xs:extension>
-                                    </xs:simpleContent>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element name="title">
-                                <xs:complexType>
-                                    <xs:simpleContent>
-                                        <xs:extension base="xs:string">
-                                            <xs:attribute name="bksrl" type="xs:string"
-                                                use="required" />
-                                        </xs:extension>
-                                    </xs:simpleContent>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="pubinfo">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="pcom" type="xs:string" />
-                            <xs:element name="vol" type="xs:string" />
-                            <xs:element name="pdate" type="xs:string" />
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-</xs:schema>
+<schema 
+xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.abc.com/schema1"
+xmlns:ab="http://www.abc.com/schema1"
+elementFormDefault="qualified">
+<element name="booklib" type="ab:booklib"></element>
+<complexType name="booklib" >
+<sequence>
+<element name="book" maxOccurs="unbounded" type="ab:book"></element>
+<element name="pubinfo" type="ab:pubinfo"></element>
+</sequence>
+</complexType>
+<complexType name="book">
+<sequence>
+<element name="author" type="ab:author"></element>
+<element name="title" type="ab:title"></element>
+</sequence>
+</complexType>
+<complexType name="pubinfo">
+<sequence>
+<element name="pcom" type="ab:pcom"></element>
+<element name="vol" type="ab:vol"></element>
+<element name="pdate" type="ab:pdate"></element>
+</sequence>
+</complexType>
+<complexType name="author">
+<simpleContent>
+<extension base="string">
+<attribute name="ac" type="ID" use="optional"></attribute>
+<attribute name="bank" type="string" use="optional"></attribute>
+</extension>
+</simpleContent>
+</complexType>
+<complexType name="title">
+<simpleContent>
+<extension base="string">
+<attribute name="bksrl" type="ID" use="required"></attribute>
+</extension>
+</simpleContent>
+</complexType>
+<complexType name="pcom">
+<simpleContent>
+<extension base="string">
+</extension>
+</simpleContent>
+</complexType>
+<complexType name="vol">
+<simpleContent>
+<extension base="string"></extension>
+</simpleContent>
+</complexType>
+<complexType name="pdate">
+<simpleContent>
+<extension base="string"></extension>
+</simpleContent>
+</complexType>
+</schema>
