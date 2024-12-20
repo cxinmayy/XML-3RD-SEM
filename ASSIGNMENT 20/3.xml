@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<booklib xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="1.xsd">
-    <book>
-        <author>Kunal Das</author>
-        <title bksrl="IN234">IWT Book BCA</title>
-    </book>
-    <book>
-        <author ac="OD1234" bank="SBI">Jamini Roy</author>
-        <title bksrl="US213">OS Book BCA</title>
-    </book>
-    <pubinfo>
-        <pcom>SOA ITER</pcom>
-        <vol>IV</vol>
-        <pdate>13th Jan 2023</pdate>
-    </pubinfo>
+<booklib  
+xmlns="http://www.abc.com/schema1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.abc.com/schema1 1.xsd">
+<book>
+<author>Kunal Das</author>
+<title bksrl="IN234">IWT Book BCA</title>
+</book>
+<book>
+<author ac="OD1234" bank="SBI">Jamini Roy</author>
+<title bksrl="US213">OS Book BCA</title>
+</book>
+<pubinfo>
+<pcom>SOA ITER</pcom>
+<vol>IV</vol>
+<pdate>13th Jan 2023</pdate>
+</pubinfo>
 </booklib>
